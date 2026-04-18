@@ -1,0 +1,302 @@
+:root {
+    --calender-height: 150px;
+    --surface: #ffffff;
+    --surface-soft: #eaf4ff;
+    --surface-strong: #eef6ff;
+    --accent: #c2defc;
+    --border-color: #8fa8c0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.calender-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+    background-color: transparent;
+
+    width: 90%;
+
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.calender-table {
+    background-color: var(--surface);
+    transition: background-color 0.2s ease;
+}
+
+.weekday {
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+}
+
+.left-spacer {
+    display: flex;
+    flex: 0 0 80px;
+    height: 50px;
+    background-color: var(--surface-soft);
+}
+
+.day {
+    height: 100%;
+    width: 100%;
+    background-color: var(--surface-soft);
+
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.period-row {
+    display: flex;
+    height: var(--calender-height);
+    flex-direction: row;
+
+    border-top: 1px solid var(--border-color);
+}
+
+.period-left {
+    display: flex;
+    flex: 0 0 80px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--surface-soft);
+}
+
+.calender-seiton {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+
+    height: auto;
+    width: 100%;
+}
+
+.day-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+
+    border-left: 1px solid var(--border-color);
+}
+
+.class-block {
+    margin: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border: none;
+    border-radius: 10px;
+    background-color: #f4faff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    border: 1px solid var(--border-color);
+}
+
+.class-block:hover {
+    background-color: #d7e8fb;
+}
+
+.day-cell-top {
+    flex: 17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4px;
+}
+
+.day-cell-top p {
+    font-weight: bold;
+    font-size: 0.8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.day-cell-bottom {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+}
+
+.bottom-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4px;
+}
+
+.day-cell-bottom p {
+    font-size: 0.75em;
+}
+
+.bottom-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.class-block p {
+    text-align: center;
+}
+
+.period-number {
+    text-align: center;
+    margin: auto;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.time {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+@media (max-width: 1400px) {
+    :root {
+        --calender-height: 120px;
+    }
+
+    .calender-section {
+        width: 95%;
+    }
+
+    .left-spacer {
+        flex: 0 0 60px;
+    }
+
+    .period-left {
+        flex: 0 0 60px;
+    }
+
+    .day {
+        font-size: 1em;
+    }
+
+    .period-number {
+        font-size: 1.2em;
+    }
+
+    .time {
+        font-size: 0.75em;
+    }
+
+    .day-cell-top p {
+        font-size: 0.8em;
+    }
+
+    .day-cell-bottom p {
+        font-size: 0.8em;
+    }
+
+    .class-block {
+        margin: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+
+    .day-cell-top,
+    .day-cell-bottom {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 950px) {
+    :root {
+        --calender-height: 100px;
+    }
+
+    .main-section {
+        width: 95%;
+    }
+
+    .calender-section {
+        width: 100%;
+        margin: 12px auto 0 auto;
+    }
+
+    .weekday {
+        height: 40px;
+    }
+
+    .left-spacer {
+        flex: 0 0 25px;
+    }
+
+    .day {
+        font-size: 0.85em;
+    }
+
+    .period-left {
+        flex: 0 0 25px;
+    }
+
+    .period-row {
+        height: 90px;
+    }
+
+    .period-number {
+        font-size: 12px;
+    }
+
+    .time {
+        font-size: 6px;
+    }
+
+    .class-block {
+        margin: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        border-radius: 8px;
+    }
+
+    .day-cell-top,
+    .day-cell-bottom {
+        padding: 2px;
+    }
+
+    .day-cell-top p {
+        font-size: 9px;
+        -webkit-line-clamp: 3;
+    }
+
+    .day-cell-bottom p {
+        font-size: 8px;
+    }
+
+    .bottom-content p {
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
