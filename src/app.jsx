@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './reset.css';
 import './App.css';
 
-const colordate_kari = "#cfe7fc"
+const colordate_kari = "#D3E0F9"
 
 const mockData = [
     {
