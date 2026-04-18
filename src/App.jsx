@@ -3,6 +3,8 @@ import { useState } from 'react';
 import './reset.css';
 import './App.css';
 
+const colordate_kari = "#cfe7fc"
+
 const mockData = [
     {
         subject_name: "情報学概論",
@@ -10,7 +12,7 @@ const mockData = [
         teacher_name: "マーク・オフナー",
         day_of_week: 1,
         period: 1,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "情報社会及び情報倫理",
@@ -18,7 +20,7 @@ const mockData = [
         teacher_name: "佐藤花子",
         day_of_week: 3,
         period: 2,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "モラル概論",
@@ -26,7 +28,7 @@ const mockData = [
         teacher_name: "モラ爺",
         day_of_week: 3,
         period: 3,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "激渋論",
@@ -34,7 +36,7 @@ const mockData = [
         teacher_name: "激渋太郎",
         day_of_week: 5,
         period: 4,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "データベース基礎",
@@ -42,7 +44,7 @@ const mockData = [
         teacher_name: "田中次郎",
         day_of_week: 2,
         period: 1,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "アルゴリズム入門",
@@ -50,7 +52,7 @@ const mockData = [
         teacher_name: "鈴木花子",
         day_of_week: 4,
         period: 2,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "コミュニカティブイングリッシュC（一年同選考用）",
@@ -58,7 +60,7 @@ const mockData = [
         teacher_name: "高橋一郎",
         day_of_week: 1,
         period: 3,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "ソフトウェア工学",
@@ -66,7 +68,7 @@ const mockData = [
         teacher_name: "伊藤美咲",
         day_of_week: 3,
         period: 4,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "人工知能基礎",
@@ -74,7 +76,7 @@ const mockData = [
         teacher_name: "渡辺健",
         day_of_week: 5,
         period: 5,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "セキュリティ概論",
@@ -82,7 +84,7 @@ const mockData = [
         teacher_name: "小林太郎",
         day_of_week: 2,
         period: 3,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "プログラミング言語論",
@@ -90,7 +92,7 @@ const mockData = [
         teacher_name: "斎藤花子",
         day_of_week: 4,
         period: 1,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "データ構造とアルゴリズム",
@@ -98,7 +100,7 @@ const mockData = [
         teacher_name: "松本次郎",
         day_of_week: 1,
         period: 5,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "オペレーティングシステム",
@@ -106,7 +108,7 @@ const mockData = [
         teacher_name: "林美咲",
         day_of_week: 3,
         period: 6,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "コンピュータアーキテクチャ",
@@ -114,7 +116,7 @@ const mockData = [
         teacher_name: "山本健",
         day_of_week: 5,
         period: 2,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "ウェブ開発基礎",
@@ -122,7 +124,7 @@ const mockData = [
         teacher_name: "中村太郎",
         day_of_week: 2,
         period: 4,
-        color: "#cfe7fc"
+        color: colordate_kari
     },
     {
         subject_name: "機械学習入門",
@@ -130,7 +132,7 @@ const mockData = [
         teacher_name: "藤田花子",
         day_of_week: 4,
         period: 6,
-        color: "#cfe7fc"
+        color: colordate_kari
     }
 ];
 
